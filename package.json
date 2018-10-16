@@ -9,7 +9,8 @@
     "build": "tsc --module commonjs && rollup -c rollup.config.ts",
     "postbuild": "npm run test && npm run lint && node definition-bundle.js",
     "test": "jest",
-    "lint": "tslint -p ."
+    "lint": "tslint -p .",
+    "prepare": "npm run build"
   },
   "author": "migiside",
   "homepage": "https://github.com/migiside/Skeletonify",
